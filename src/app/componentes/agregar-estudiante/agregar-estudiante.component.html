@@ -1,0 +1,16 @@
+<h2>agregar-estudiante</h2>
+<form (ngSubmit)="addEstudiante()">
+    <div>
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" [(ngModel)]="estudiante.nombre"><br>
+        <label for="">Apellido:</label>
+        <input type="text" name="apellido" [(ngModel)]="estudiante.apellido"><br>
+        <label for="">Edad:</label>
+        <input type="text" name="edad" [(ngModel)]="estudiante.edad"><br>
+        <label for="">Carrera:</label>
+        <input type="text" name="carrera" [(ngModel)]="estudiante.carrera"><br>
+        <label for="">Email:</label>
+        <input type="text" name="email" [(ngModel)]="estudiante.email"><br>
+        <button type="submit" class="btn btn-primary mt-3">Agregar</button>
+    </div>
+</form>
