@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MensajeService } from '../../servicios/mensaje.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-agregar-mensaje',
   standalone: true,
-  imports: [],
+  imports: [FormsModule], //para utilizar formularios
   templateUrl: './agregar-mensaje.component.html',
   styleUrl: './agregar-mensaje.component.css'
 })

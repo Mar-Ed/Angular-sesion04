@@ -1,1 +1,8 @@
-<p>agregar-mensaje works!</p>
+
+<div>
+    <form (ngSubmit)="addMensaje()">
+        <label for="">Mensaje</label>
+        <input type="text" name="msg" [(ngModel)]="msg"><br>
+        <button type="submit" class="btn btn-primary mt-3">Agregar</button>
+    </form>
+</div>
